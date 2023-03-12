@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classic Recipes</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/457f9ab6f8.js" crossorigin="anonymous"></script>
+
+</head>
+ <body>
+  <script>
+    console.log(window.location.href);
+    if(window.location.href.indexOf('?')==-1)
+    window.location.replace("index.html?t=all");
+    </script>
+   <nav class="navbar">
+    <div class="nav-center">
+       <!-- header -->
+       <div class="nav-header">
+        <a href="index.html?t=all" class="nav-logo">
+          <img src="./images/logo.png" alt="classicrecipes">
+        </a>
+        <button type="button" class="btn nav-btn">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+      <!-- links -->
+       <div class="nav-links show-links">
+         <a href="index.html?t=all" class="nav-link">ACASA</a>
+         <a href="food.html?t=all" class="nav-link">MANCARE</a>
+         <a href="about.html" class="nav-link">DESPRE</a>
+         <a href="contact.html" class="nav-link">CONTACT</a>
+       </div>
+    </div>
+   </nav>
+<!-- main -->
+<main class="back">
+<!-- page -->  
+<div class="page">
+  <!--header-->
+  <header class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Classic Recipes</h1>
+        <h4>Descopera o multitudine de arome</h4><br>
+        <a href="map.html" class="hero-btn">Exploreaza lumea!</a>
+      </div>
+    </div>
+  </header>
+  <!-- sf header -->
+
+  <!-- container retete -->
+  <section class="recipes-container">
+    <!-- tags container-->
+    <div class="tags-container">
+      <h4>recipes</h4>
+      <div class="tags-list" id="filterContainer">
+        <!-- De pus numarul de retete la fiecare -->
+        <button class="filter active" onclick="filterSelection('all')" id="all">Toate</button>
+        <button class="filter" onclick="filterSelection('asia')" id="asia"> Asia </button>
+        <button class="filter" onclick="filterSelection('africa')" id="africa">Africa</button>
+        <button class="filter" onclick="filterSelection('europe')" id="europe">Europa</button>
+        <button class="filter" onclick="filterSelection('america')" id="america">Americile</button>
+      </div>
+    </div>
+    <!-- sf tags container-->
+
+    <!-- lista retete-->
+    <div class="recipes-list">
+    <!-- o reteta -->
+    <a href="tacos.html" class="recipe america">
+      <img src="./images/Retete/Carne-Asada-Tacos.jpg" class="img recipe-img"/>
+      <h5>Tacos</h5>
+      <p>Preg: 90min | Gatit:30min</p>
+    </a>
+    <!-- sf o reteta -->
+    <!-- o reteta -->
+    <a href="paste bolognese.html" class="recipe europe">
+      <img src="./images/Retete/bolgnese.jpg" class="img recipe-img"/>
+      <h5>Tagaliatelle alla Bolognese</h5>
+      <p>Preg: 30min | Gatit:120min</p>
+    </a>
+    <!-- sf o reteta -->
+    <!-- o reteta -->
+    <a href="xiaolongbao.html" class="recipe asia">
+      <img src="./images/Retete/xiaolongbao.jpg" class="img recipe-img"/>
+      <h5>Xiaolongbao</h5>
+      <p>Preg: 45min | Gatit:20min</p>
+    </a>
+    <!-- sf o reteta -->
+    <!-- o reteta -->
+    <a href="fufu.html" class="recipe africa">
+      <img src="./images/Retete/fufu.jpg" class="img recipe-img"/>
+      <h5>Supa egusi cu Fufu</h5>
+      <p>Preg: 30min | Gatit:60min</p>
+    </a>
+    <!-- sf o reteta -->
+    <!-- o reteta -->
+    <a href="empanadas.html" class="recipe america">
+      <img src="./images/Retete/empanadas.jpg" class="img recipe-img"/>
+      <h5>Empanadas</h5>
+      <p>Preg: 90min | Gatit:30min</p>
+    </a>
+    <!-- sf o reteta -->
+    <!-- o reteta -->
+    <a href="falafel.html" class="recipe asia">
+      <img src="./images/Retete/falafel.jpg" class="img recipe-img"/>
+      <h5>Falafel</h5>
+      <p>Preg: 30min | Gatit:45min</p>
+    </a>
+    <!-- sf o reteta -->
+    <!-- o reteta -->
+    <a href="vitabourg.html" class="recipe europe">
+      <img src="./images/Retete/vitabourg.jpg" class="img recipe-img"/>
+      <h5>Vita Bourguignon</h5>
+      <p>Preg: 1h | Gatit:3h</p>
+    </a>
+    <!-- sf o reteta -->
+    <!-- sf container retete-->
+    </div>
+  </section>
+  <!-- sf lista retete -->
+</div>
+</div> 
+<!--sf page-->
+</main>
+<!-- sf main-->
+
+<!-- footer-->
+<footer class="page-footer">
+<p>&copy; <span id="date"></span>
+<span class="footer-logo">ClassicRecipes</span> Built by Lazar Silviu
+</p>
+</footer>
+<!-- sf footer-->
+
+<!-- JS pt meniu+data -->
+  <script src="./menu+date.js"></script>
+ </body>   
+</html>
